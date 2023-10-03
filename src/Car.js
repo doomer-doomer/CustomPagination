@@ -4,6 +4,10 @@ import './carsLayout.css'
 import 'boxicons'
 
 export default function Cars(props){
+
+    function reply(msg){
+        alert(msg)
+    }
     return(
         <div className="carlayout">
             <div className='externallink'>
@@ -28,7 +32,7 @@ export default function Cars(props){
             
                 <div className='cardBtn'>
                 <p><b>${((props.price)*10).toLocaleString('US-en')}</b></p>
-                <button>Know more</button>
+                <button onClick={abc=>reply(props.name)}>Know more</button>
                 </div>
                 
             </div>
