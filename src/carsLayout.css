@@ -1,0 +1,121 @@
+body{
+   background-color: whitesmoke;
+}
+
+.upperLayout{
+    display: flex;
+    width: 95%;
+    left: 20px;
+    position: fixed;
+    justify-content: space-between;
+    top: 20px;
+    z-index: 3;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow:0px 4px 3px rgba(105, 105, 105, 0.5); 
+    background-color: white;
+}
+
+
+
+.upperLayout input{
+    border: none;
+    border-radius: 5px;
+    
+}
+
+
+
+.allCars{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.carlayout{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 350px;
+    display: block;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+    background-color: white;
+}
+
+
+.cardetails{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.cardetails button{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 14px;
+    background-color: #2240c2 ;
+    color: white;
+}
+
+.carimg img{
+    object-fit: cover;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 1s ease;
+}
+
+.carimg img:hover{
+    opacity: 0.5;
+}
+
+.innercardetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginationBtnSec{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 20px;
+    justify-content:right;
+    
+}
+
+.paginationBtn{
+    display: flex;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.paginationBtn span{
+   
+}
+
+.upperLayout button{
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(222, 222, 222);
+}
+
+.nodata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+.nodata h1{
+    width: 300px;
+}
