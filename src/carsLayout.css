@@ -15,15 +15,29 @@ body{
     padding: 15px;
     box-shadow:0px 4px 3px rgba(105, 105, 105, 0.5); 
     background-color: white;
+    color: black;
 }
 
 
-
-.upperLayout input{
+.searchbox{
+    display: flex;
     border: none;
     border-radius: 5px;
-    
+    padding: 5px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s ease;
 }
+
+.searchbox input{
+    all: unset;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s ease;
+    padding-left: 5px;
+}
+
 
 
 
@@ -43,13 +57,14 @@ body{
     display: block;
     box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
     background-color: white;
+    position: relative;
 }
 
 
 .cardetails{
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .cardetails button{
@@ -57,8 +72,28 @@ body{
     border-radius: 10px;
     padding: 8px;
     margin-top: 14px;
-    background-color: #2240c2 ;
+    background-color: #2d52f8 ;
     color: white;
+    transition: 0.3s ease;
+}
+
+.cardetails button:hover{
+    background-color: #5674fa ;
+    color: white;
+}
+
+.cardBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.cardBtn p{
+    font-size: 20px;
+    display: flex;
+    padding-top: 10px;
 }
 
 .carimg img{
@@ -85,6 +120,7 @@ body{
     left: 0;
     right: 20px;
     justify-content:right;
+    z-index: 3;
     
 }
 
@@ -95,17 +131,36 @@ body{
     border-radius: 10px;
     padding: 10px;
     background-color: white;
+    z-index: 4;
 }
 
 .paginationBtn span{
    
 }
 
+.externallink{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .upperLayout button{
     padding: 8px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s ease;
+    color: white;
+}
+
+.upperLayout button:hover{
+    background-color: #5674fa;
+    color: white;
 }
 
 .nodata{

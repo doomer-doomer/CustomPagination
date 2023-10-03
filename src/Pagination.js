@@ -34,6 +34,12 @@ class PaginationComponent extends Component {
     return { startIndex, endIndex };
   }
 
+  randomPriceGenerator(min,max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   renderItems() {
     const { data } = this.props;
     const { startIndex, endIndex } = this.calculatePageRange();
@@ -43,23 +49,16 @@ class PaginationComponent extends Component {
     return (
       <div className='allCars'>
          {itemsToDisplay.map((eachCar)=>{
-          if(eachCar.image !==""){
+         
             return <Cars
             key={eachCar.key}
             name = {eachCar.title}
-            image={eachCar.image}
+            image={eachCar.image || "https://hips.hearstapps.com/hmg-prod/images/legacy-fre-image-placeholder-1641422717.png?resize=980:*"}
             class = {eachCar.class}
-            year = {eachCar.start_production}
+            year = {eachCar.start_production || "Not given"} 
+            price={this.randomPriceGenerator(1000,9999)}
         />
-          }else{
-            return <Cars
-            key={eachCar.key}
-            name = {eachCar.title}
-            image="https://hips.hearstapps.com/hmg-prod/images/legacy-fre-image-placeholder-1641422717.png?resize=980:*"
-            class = {eachCar.class}
-            year = {eachCar.start_production}
-        />
-          }
+          
         
     })}
       </div>
