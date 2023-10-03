@@ -3,7 +3,6 @@ import CarsData from "./CarsData"
 import Cars from "./Car"
 import { useParams } from "react-router-dom";
 import SearchComponent from "./Search"
-import { NextUIProvider } from "@nextui-org/react";
 
 export default function Store(){
     const { id } = useParams();

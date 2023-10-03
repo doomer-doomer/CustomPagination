@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import {NextUIProvider} from "@nextui-org/react";
 
 function App() {
   const router = createBrowserRouter([
